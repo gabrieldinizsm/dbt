@@ -1,0 +1,38 @@
+version: 2
+
+sources:
+  - name: BI_STG
+    database: FENG_BI
+    tables:
+      - name: STG_DIM_LEAD
+        loaded_at_field: data_processamento_dw
+        freshness:
+          error_after: {count: 2, period: day}
+      - name: STG_DIM_ASSINANTE
+        loaded_at_field: data_processamento_dw
+        freshness:
+          error_after: {count: 2, period: day}
+      - name: STG_DIM_CONTRATO
+        loaded_at_field: data_processamento_dw
+        freshness:
+          error_after: {count: 2, period: day}
+      - name: STG_DIM_COBRANCA
+        loaded_at_field: data_processamento_dw
+        freshness:
+          error_after: {count: 2, period: day}
+      - name: STG_DIM_COBRANCATRANSACAO
+        loaded_at_field: data_processamento_dw
+        freshness:
+          error_after: {count: 2, period: day}
+      - name: STG_DIM_CARTAOCREDITO
+        loaded_at_field: data_processamento_dw
+        freshness:
+          error_after: {count: 2, period: day}
+      - name: STG_DIM_PONTOS
+        loaded_at_field: data_processamento_dw
+        freshness:
+          error_after: {count: 2, period: day}
+      - name: STG_DIM_RESGATEEXPERIENCIA
+        loaded_at_field: data_processamento_dw
+        freshness:
+          error_after: {count: 2, period: day}
